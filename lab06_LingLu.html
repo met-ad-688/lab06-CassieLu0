@@ -338,6 +338,7 @@ only showing top 5 rows
 <pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
 </div>
 </div>
+<p>The graph reveals that full-time positions (&gt; 32 hours) generally offer higher median salaries compared to part-time roles. However, salary distributions for all employment types have wide ranges and significant outliers, indicating high variability in pay across job types.</p>
 </section>
 <section id="salary-distribution-by-industry" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Salary Distribution by Industry</h1>
@@ -362,7 +363,7 @@ only showing top 5 rows
 </ul></li>
 <li><strong>Explanation:</strong> Write two sentences about what the graph reveals.</li>
 </ul>
-<div id="cell-7" class="cell" data-execution_count="4">
+<div id="cell-8" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>df_filtered_1 <span class="op">=</span> df.dropna(subset<span class="op">=</span>[<span class="st">"NAICS2_NAME"</span>, <span class="st">"SALARY_FROM"</span>])</span>
@@ -414,6 +415,7 @@ only showing top 5 rows
 <pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
 </div>
 </div>
+<p>The graph shows the average starting salaries across different industries. From the visualization, the industries like information and accommodation and food services tend to offer higher starting salaries, averaging over $110,000. On the other hand, industries such as educational services and public administration are at the lower end of the salary, closer to $65,000. This suggests that students seeking higher-paying entry-level roles may want to explore opportunities in technology-related or service-driven industries. While those interested in public service or education might expect more modest compensation initially.</p>
 </section>
 <section id="job-posting-trends-over-time" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Job Posting Trends Over Time</h1>
@@ -434,7 +436,7 @@ only showing top 5 rows
 </ul></li>
 <li><strong>Explanation:</strong> Write two sentences about what the graph reveals.</li>
 </ul>
-<div id="cell-9" class="cell" data-execution_count="5">
+<div id="cell-11" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>df_posted <span class="op">=</span> df.dropna(subset<span class="op">=</span>[<span class="st">"POSTED"</span>])</span>
@@ -482,6 +484,7 @@ Java HotSpot(TM) 64-Bit Server VM warning: Try increasing the code cache size us
 <pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
 </div>
 </div>
+<p>The graph illustrates how job postings fluctuated between May and September 2024. There are noticeable weekly spikes and drops, suggesting a strong cyclical or seasonal pattern in posting activity. It possibly related to hiring routines like posting jobs at the beginning of the week and fewer postings over weekends. Despite the fluctuations, the overall number of postings remains fairly consistent. It could indicates a steady demand for new hires over this time period.</p>
 </section>
 <section id="top-10-job-titles-by-count" class="level1" data-number="4">
 <h1 data-number="4"><span class="header-section-number">4</span> Top 10 Job Titles by Count</h1>
@@ -503,7 +506,7 @@ Java HotSpot(TM) 64-Bit Server VM warning: Try increasing the code cache size us
 </ul></li>
 <li><strong>Explanation:</strong> Write two sentences about what the graph reveals.</li>
 </ul>
-<div id="cell-11" class="cell" data-execution_count="6">
+<div id="cell-14" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>df_titles <span class="op">=</span> df.dropna(subset<span class="op">=</span>[<span class="st">"TITLE_NAME"</span>])</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -553,6 +556,7 @@ Java HotSpot(TM) 64-Bit Server VM warning: Try increasing the code cache size us
 <pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
 </div>
 </div>
+<p>The graph shows the top 10 most frequently posted job titles. From the graph, role “Data Analysts” standing out as the most in-demand role by far, with over 8,500 postings. This suggests that organizations are highly focused on data-driven decision-making and highlights the growing importance of analytical skills in today’s job market. Other roles like “Business Intelligence Analysts” and “Enterprise Architects” also appear frequently. They are indicating a strong demand for professionals who can work with data systems and design efficient business solutions.</p>
 </section>
 <section id="remote-vs-on-site-job-postings" class="level1" data-number="5">
 <h1 data-number="5"><span class="header-section-number">5</span> Remote vs On-Site Job Postings</h1>
@@ -573,7 +577,7 @@ Java HotSpot(TM) 64-Bit Server VM warning: Try increasing the code cache size us
 </ul></li>
 <li><strong>Explanation:</strong> Write two sentences about what the graph reveals.</li>
 </ul>
-<div id="cell-13" class="cell" data-execution_count="7">
+<div id="cell-17" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>df_remote <span class="op">=</span> df.dropna(subset<span class="op">=</span>[<span class="st">"REMOTE_TYPE_NAME"</span>])</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -612,6 +616,7 @@ Java HotSpot(TM) 64-Bit Server VM warning: Try increasing the code cache size us
 <pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
 </div>
 </div>
+<p>This pie chart shows the distribution of job postings based on remote work status. The majority of postings (about 78%) do not specify the remote type, which may suggest a lack of clarity or consistency in how companies label their positions. Of the labeled postings, fully remote jobs is 17.2% across the pie chart. While hybrid and fully on-site roles are significantly lower, at 3.1% and 1.2%. This indicates that while remote work is gaining popularity, there is still a lot of missing data when it comes to how jobs are categorized in terms of work location.</p>
 </section>
 <section id="skill-demand-analysis-by-industry-stacked-bar-chart" class="level1" data-number="6">
 <h1 data-number="6"><span class="header-section-number">6</span> Skill Demand Analysis by Industry (Stacked Bar Chart)</h1>
@@ -634,7 +639,7 @@ Java HotSpot(TM) 64-Bit Server VM warning: Try increasing the code cache size us
 </ul></li>
 <li><strong>Explanation:</strong> Write two sentences about what the graph reveals.</li>
 </ul>
-<div id="cell-15" class="cell" data-execution_count="8">
+<div id="cell-20" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>df_cleaned <span class="op">=</span> df.withColumn(</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"cert_str"</span>,</span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>    regexp_replace(col(<span class="st">"certifications_name"</span>), <span class="vs">r'^\[|\]$'</span>, <span class="st">''</span>)</span>
@@ -691,6 +696,7 @@ Java HotSpot(TM) 64-Bit Server VM warning: Try increasing the code cache size us
 <pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
 </div>
 </div>
+<p>This stacked bar chart shows which industries are requiring the most certifications in job postings. The industry with the highest number of certifications is the <strong>Finance and Insurance</strong> sector, followed by <strong>Professional, Scientific, and Technical Services</strong> and <strong>Unclassified Industry</strong>. Among the specific certifications, <strong>Microsoft Azure Certification</strong> and <strong>AWS Certified Solutions Architect</strong> appear more frequently in tech-related fields. It’s also interesting to see that certifications like a <strong>Valid Driver’s License</strong> show up in several sectors. It is highlighting how both technical and non-technical credentials are valued depending on the industry. This visualization helps illustrate how demand for certifications varies across different parts of the job market.</p>
 </section>
 <section id="salary-analysis-by-onet-occupation-type-bubble-chart" class="level1" data-number="7">
 <h1 data-number="7"><span class="header-section-number">7</span> Salary Analysis by ONET Occupation Type (Bubble Chart)</h1>
@@ -712,7 +718,7 @@ Java HotSpot(TM) 64-Bit Server VM warning: Try increasing the code cache size us
 </ul></li>
 <li><strong>Explanation:</strong> Write two sentences about what the graph reveals.</li>
 </ul>
-<div id="cell-17" class="cell" data-execution_count="11">
+<div id="cell-23" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>df_salary <span class="op">=</span> df.dropna(subset<span class="op">=</span>[<span class="st">"onet_name"</span>, <span class="st">"salary"</span>])</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -749,6 +755,7 @@ Java HotSpot(TM) 64-Bit Server VM warning: Try increasing the code cache size us
 <pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
 </div>
 </div>
+<p>This bubble chart displays the median salary for a specific ONET occupation—Business Intelligence Analysts. Since there is only one occupation shown, the chart highlights that this role has a median salary of around $116,300. This median salary represented by both the bubble size and color intensity. Although we don’t have other occupations to compare against, the visualization still emphasizes that Business Intelligence Analysts are relatively well-compensated. If more occupations were added, the chart would be more effective in showcasing differences in salary across roles.</p>
 </section>
 <section id="career-pathway-trends-sankey-diagram" class="level1" data-number="8">
 <h1 data-number="8"><span class="header-section-number">8</span> Career Pathway Trends (Sankey Diagram)</h1>
@@ -770,7 +777,7 @@ Java HotSpot(TM) 64-Bit Server VM warning: Try increasing the code cache size us
 </ul></li>
 <li><strong>Explanation:</strong> Write two sentences about what the graph reveals.</li>
 </ul>
-<div id="cell-19" class="cell" data-execution_count="12">
+<div id="cell-26" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>df_titles <span class="op">=</span> df.<span class="bu">filter</span>(</span>
@@ -823,6 +830,7 @@ Java HotSpot(TM) 64-Bit Server VM warning: Try increasing the code cache size us
 <pre><code>Unable to display output for mime type(s): application/vnd.plotly.v1+json</code></pre>
 </div>
 </div>
+<p>This Sankey diagram shows career pathway trends between SOC (Standard Occupational Classification) job categories. It highlights a transition from “Computer and Mathematical Occupations” to “Mathematical Science Occupations.” Since only one flow is shown, it suggests that a significant portion of people in computing-related roles may transition into mathematical science positions. The computing-related roles may include roles like data scientists, statisticians, or analysts. This kind of movement indicates overlap in skills and a potential growth area for students with strong technical and analytical backgrounds.</p>
 </section>
 
 </main>
